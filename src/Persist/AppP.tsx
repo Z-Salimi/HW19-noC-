@@ -1,9 +1,8 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { RootState } from './store';
-import { decrement, increment } from './reducer';
-
-const AppL: React.FC = () => {
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "./store";
+import { decrement, increment } from "./reducer";
+const AppP: React.FC = () => {
   const dispatch = useDispatch();
   const count = useSelector((state: RootState) => state.counter.count);
 
@@ -26,4 +25,4 @@ const AppL: React.FC = () => {
   );
 };
 
-export default AppL;
+export default AppP;
